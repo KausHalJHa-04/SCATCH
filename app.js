@@ -23,4 +23,5 @@ app.use("/owners", ownersRouter)
 app.use("/products", productRouter)
 app.use("/users", usersRouter)
 
-app.listen(PORT, () => console.log("Server running on port " + PORT));
+app.listen(PORT)
+// app.listen(PORT, () => console.log("Server running on port " + PORT));
