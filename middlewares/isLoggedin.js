@@ -14,6 +14,7 @@ module.exports = async function (req, res, next) {
           .findOne({email: decoded.email })
           .select("-password");
         req.user = user;
+        
         next();
     }catch(err){
         req.flash("error","something went wrong");
